@@ -1,0 +1,156 @@
+<html>
+<head>
+  <title>Weather</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="keywords" content=""> 
+  <meta name="description" content="">  
+  <meta name="author" content="Taghreed Ashraf"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> 
+</head>
+<body>
+
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid content-nav">
+      <a class="navbar-brand ms-4 ps-4" href="#">
+        <img src="image/logo.png" alt="logo">
+        <div class="logo-Content d-inline-block align-middle">
+          <h2 class="m-0 mb-1 ms-1 text-white">Weather</h2>
+          <p class="m-0 ms-1">tagline goes here</p>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0">
+          <li class="nav-item ps-2">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item ps-2">
+            <a class="nav-link">News</a>
+          </li>
+          <li class="nav-item ps-1">
+            <a class="nav-link">Live cameras</a>
+          </li>
+          <li class="nav-item ps-2">
+            <a class="nav-link">Photos</a>
+          </li>
+          <li class="nav-item pe-5">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="main-content pb-5">
+
+      <div class="container py-4">
+        <div class="mt-5">
+        <form action="" class="position-relative">
+          <input id="location" class="form-control rounded-pill p-3 search" type="text" name="search" placeholder="Find Your Location....">
+          <button id="searchBtn" class="find-Btn rounded-pill text-white btn position-absolute">Find</button>
+        </form>
+      </div>
+      </div>
+
+      <div class="container mt-5 ">
+        <div class="row gx-0 gy-3">
+
+          <div class="col-lg-4">
+            <div class="content-weather pb-4 text-white">
+              <div class="header-weather d-flex justify-content-between align-items-center">
+                <p id="oneDay" class="my-2 ms-3"></p>
+                <p id="dayMonth" class="my-2 me-3"></p>
+              </div>
+              <p id="country" class="location ps-4 mt-3 "></p>
+              <div class="body-weather mb-4 d-flex align-items-center">
+                <h2 id="dayTemp" class="temp pe-3 ps-3"></h2>
+                <img id="imgIcon" alt="moon">
+              </div>
+              <h6 id="textWeatherDay" class="ps-4"></h6>
+              <span class="ms-4"><img src="image/icon-umberella.png" alt=""> 20% </span>
+              <span class="ms-4"><img src="image/icon-wind.png" alt=""> 18km/h </span>
+              <span class="ms-4"><img src="image/icon-compass.png" alt=""> East </span>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="content-weather color-two border-none pb-4 text-white text-center">
+              <div class="header-weather color-one border-none text-center mb-5">
+                <p id="nextDay" class="py-2"></p>
+              </div>
+              <img id="imgTwo" class="img-width" src="" alt="sun">
+              <div class="body-weather my-4">
+                <h2 id="maxTempDayTwo" class="temp text-24"></h2>
+                <h2 id="minTempDayTwo" class="temp text-24 min-temp"></h2>
+              </div>
+              <h6 id="textWeatherDayTwo" class="mt-4 mb-5"></h6>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4">
+            <div class="content-weather weather pb-4 text-white text-center">
+              <div class="header-weather weather-3 text-center mb-5">
+                <p id="thirdDay" class="py-2"></p>
+              </div>
+              <img id="imgThree" class="img-width" src="" alt="sun">
+              <div class="body-weather my-4">
+                <h2 id="maxTempDaythree" class="temp text-24">40<sup>o</sup>C</h2>
+                <h2 id="minTempDaythree" class="temp text-24 min-temp">23.5<sup>o</sup></h2>
+              </div>
+              <h6 id="textWeatherDayThree" class="mt-4 mb-5"></h6>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <footer >
+    <div class="container py-5">
+      <div class="row">
+
+        <div class="col-md-8">
+          <div class="form py-3">
+            <form action="" class="position-relative">
+              <input class="form-control rounded-pill p-3 subscripe" type="text" name="search" placeholder="Enter Your Email to subscribe....">
+              <button class="sub-Btn rounded-pill text-white btn position-absolute">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-md-3 offset-md-1">
+          <div class="icons py-4 d-flex">
+            <div class="box d-flex justify-content-center align-items-center me-1"><a href=""><i class="fa-brands fa-facebook"></i></a></div>
+            <div class="box d-flex justify-content-center align-items-center me-1"><a href=""><i class="fa-brands fa-twitter"></i></a></div>
+            <div class="box d-flex justify-content-center align-items-center me-1"><a href=""><i class="fa-brands fa-google-plus"></i></a></div>
+            <div class="box d-flex justify-content-center align-items-center me-1"><a href=""><i class="fa-brands fa-pinterest"></i></a></div>
+          </div>
+        </div>
+
+        <p class="copyright">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
